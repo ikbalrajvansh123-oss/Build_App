@@ -1,0 +1,25 @@
+# =====================================================
+# OCR Number Scanner - Project Requirements
+# Specialized for Engraved/Stamped Metal Serial Numbers
+# =====================================================
+
+# --- UI Framework (Kivy) ---
+Kivy==2.3.1
+kivy-deps.angle==0.4.0
+kivy-deps.glew==0.3.1
+kivy_deps.sdl2==0.8.0
+Kivy-Garden==0.1.5
+
+# --- Computer Vision & Image Processing ---
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=10.0.0
+
+# --- OCR Engine ---
+# Android: Google ML Kit is called via pyjnius (no pip package needed)
+# Desktop (Windows): pytesseract used as fallback for PC testing
+pytesseract>=0.3.10
+
+# NOTE: torch, torchvision, easyocr have been removed.
+# This reduces APK size by ~700 MB and fixes Android packaging.
+# pyjnius is automatically included by Buildozer on Android.

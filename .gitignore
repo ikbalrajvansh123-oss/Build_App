@@ -1,0 +1,25 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# EasyOCR cached models (auto-downloaded on device)
+easyocr_models/
+
+# Buildozer / Android build artifacts
+.buildozer/
+bin/
+
+# Local databases and temporary images
+ocr_history.db
+temp_images/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS / IDE files
+.idea/
+.vscode/
+Thumbs.db
